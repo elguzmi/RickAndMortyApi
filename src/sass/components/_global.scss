@@ -1,0 +1,39 @@
+$color-primario: #3c096c;
+$color-secundario: #c77dff;
+$color-dark:#10002b;
+$color-light: #ffffff;
+$fuente1: 'Fira Sans', sans-serif;
+
+
+//Funcion de opacidad
+@function opacity($color,$opacidad) {
+    @return rgba($color, $opacidad);
+} 
+
+@mixin titulos{
+    text-align: center;
+    font-size: 5.5rem;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 4px 1px 1px $color-secundario;
+    text-transform: uppercase;
+}
+@each $input  in label,input,textarea {
+    #{$input} {
+		display: block;
+        font-size: 25px;
+        margin: 30px auto;
+        text-align: center;
+        
+    }
+}
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0;
+}
+body{
+    background-color: $color-primario;
+    font-family: $fuente1;
+    color: $color-light;
+}

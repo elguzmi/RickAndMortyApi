@@ -1,0 +1,26 @@
+.contacto{
+    margin: 100px 0;
+    width: 100%;
+    height: auto;
+    background-color: $color-dark;
+    padding: 30px;
+    h4{
+        @include titulos;
+    }
+    &__form{
+        border-radius: 10px;
+        background-color: $color-secundario;
+        width: 60%;
+        min-width: 300px;
+        margin: 0 auto;
+        padding: 20px;
+        form{
+            width: 100%;
+            input,textarea{
+                width: 80%;
+                margin: 0 auto;
+                border-radius: 10px;
+            }
+        }
+    }
+}

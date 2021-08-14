@@ -1,0 +1,19 @@
+.biografia{
+    height: auto;
+    width: 100%;
+    &__container{
+        width: 60%;
+        margin: 0 auto;
+        &-titulo{
+            @include titulos;
+        }
+        &-parrafo{
+            margin-top: 20px;
+            text-align: justify;
+            font-size: 20px;
+            padding: 20px;
+            background-color: opacity($color-secundario,0.30);
+            border-radius: 20px;
+        }
+    }
+}
