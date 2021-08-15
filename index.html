@@ -16,6 +16,7 @@
     <link
     rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="./src/sass/estilos.css">
+    <link rel="stylesheet" href="./src/sass/tablet.css" media="(max-width:1014px)">
 
 <!--     <script src="./src/js/require.js"></script> -->
 </head>
@@ -24,22 +25,22 @@
         <!-- barra de navegacion -->
         <nav class="nav">
             <ul class="nav__elementos">
-                <li>Inicio</li>
-                <li>Biografia</li>
-                <li>Personajes</li>
-                <li>Contacto</li>
+                <li><a href="#main">Inicio</a> </li>
+                <li><a href="#biografia">Biografia</a></li>
+                <li><a href="#cards">Personajes</a></li>
+                <li><a href="#contact">Contacto</a></li>
             </ul>
         </nav>
     </header>
     <!-- main -->
-    <section class="section">
+    <section class="section" id="main">
         <div class="section__container--banner">
             <div>
 
             </div>
         </div>
         <div class="section__container">
-            <div class="section__container-title animate__animated animate__backInUp ">
+            <div class="section__container-title animate__animated animate__backInUp infinite delay-10s">
 
             </div>
             <div class="section__container-subtitle">
@@ -51,7 +52,7 @@
         </div>
     </section>
 
-    <section class="biografia">
+    <section class="biografia" id="biografia">
         <div class="biografia__container">
             <h2 class="biografia__container-titulo">
                 Biografia
@@ -73,15 +74,15 @@
         </div>
     </section>
 
-    <section class="cards">
+    <section class="cards" id="cards">
         <h3>Personajes</h3>
         <div class="cards__container">
-            
+            <!-- contenido de cards -->
         </div>
     </section>
 
-    <section class="contacto">
-        <h4>Contacto</h4>
+    <section class="contacto" id="contact">
+        <h3>Contacto</h3>
         <div class="contacto__form">
             <form action="" method="">
                 <label for="Nombre">Nombre:</label>
@@ -90,7 +91,7 @@
                 <input type="text" placeholder="Correo">
                 <label for="Mensaje">Mensaje:</label>
                 <textarea name="" id="" cols="20" rows="0"></textarea>
-                <button type="submit">Enviar</button>
+                <button type="submit" class="btn-grad">Enviar</button>
             </form>
         </div>        
     </section>

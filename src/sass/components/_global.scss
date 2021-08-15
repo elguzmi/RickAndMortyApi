@@ -31,9 +31,11 @@ $fuente1: 'Fira Sans', sans-serif;
     box-sizing: border-box;
     margin: 0px;
     padding: 0;
+    scroll-behavior:smooth;
 }
 body{
     background-color: $color-primario;
     font-family: $fuente1;
     color: $color-light;
+    
 }

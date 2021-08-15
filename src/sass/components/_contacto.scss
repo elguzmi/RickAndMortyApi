@@ -4,7 +4,7 @@
     height: auto;
     background-color: $color-dark;
     padding: 30px;
-    h4{
+    h3{
         @include titulos;
     }
     &__form{
@@ -21,25 +21,38 @@
                 margin: 0 auto;
                 border-radius: 10px;
                 height: 40px;
+                font-family: $fuente1;
                 &::placeholder{
                     color: gray;
                 }
             }
-            button{
-                margin-top: 20px;
-                width: 100%;
-                height: 40px;
-                background-color: $color-light;
-                color: $color-dark;
-                font-size: 20px;
-                font-family: $fuente1;
-                border: 0px solid black;
-                &:hover{
-                    background-color: rebeccapurple;
-                    cursor: pointer;
-                }
-
-            }
+            
         }
     }
 }
+
+
+.btn-grad {background-image: linear-gradient(to right, $color-primario 0%, $color-dark  51%, $color-secundario  100%)}
+.btn-grad {
+    margin-top: 20px;
+   padding: 15px 45px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+
+   border-radius: 10px;
+   display: block;
+   width: 100%;
+   font-size: 20px;
+   font-family: $fuente1;
+ }
+
+ .btn-grad:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+   cursor: pointer;
+ }
+

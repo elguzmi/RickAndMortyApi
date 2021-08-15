@@ -3,6 +3,8 @@
     width: 100%;
     background-color: opacity($color-secundario,.30);
     border-radius: 0px 0px 50px 50px;
+    position: fixed;
+    z-index: 10000;
 }
 .nav{
     width: 90%;
@@ -23,6 +25,17 @@
         li{
             list-style: none;
             font-size: 20px;
+            transition: .5s all;
+            :hover{
+                transform: scale(1.5);
+                padding: 10px 4px;
+                border: 1px solid $color-primario;
+                border-radius: 10px;
+            }
+            a{
+                text-decoration: none;
+                color: $color-light;
+            }
         }
     }
 }

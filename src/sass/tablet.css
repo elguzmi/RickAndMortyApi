@@ -1,0 +1,33 @@
+h1 {
+  font-size: 3.5rem !important;
+}
+
+h2 {
+  font-size: 3.5rem !important;
+}
+
+h3 {
+  font-size: 3.5rem !important;
+}
+
+.nav__elementos {
+  flex-direction: column;
+}
+
+.section__container-subtitle h1 {
+  font-size: 3.5rem;
+}
+
+.section__container-title {
+  min-width: 250px;
+}
+
+.section__container--banner {
+  display: none;
+}
+
+.biografia__container {
+  width: 100%;
+}
+
+/*# sourceMappingURL=tablet.css.map */

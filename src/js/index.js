@@ -10,9 +10,9 @@ window.addEventListener('load',()=>{
             let datos = await data(url);
             console.log(datos.results.length);
             
-            for(let i= 0; i<=datos.results.length;i++){
+            for(let i= 0; i<datos.results.length;i++){
                 let character = await data(`${url}/${datos.results[i].id}`);
-                card(character.name,character.image,character.location.name);
+                card(character.name,character.image,character.location.name,i);
             }
             
             
@@ -26,7 +26,7 @@ window.addEventListener('load',()=>{
     anotherfunction(API);
 
 
-    const card = (name,img,dimension)=>{
+    const card = (name,img,dimension,number)=>{
         let container = document.querySelector('.cards__container');
         let platilla = `
         <div class="cards__card">
@@ -40,7 +40,7 @@ window.addEventListener('load',()=>{
                     </p>
                 </div>
                 <div class="cards__card-footer">
-                    <h4>Rick y morty</h4>
+                    <h4>${number}</h4>
                 </div>
             </div>`;
         container.innerHTML+=platilla;

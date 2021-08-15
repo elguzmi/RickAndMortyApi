@@ -13,16 +13,18 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-    }
-    .cards__card{
         
+    }
+    .cards__card{ 
         height: 300px;
         min-width: 250px;   
+        max-width: 300px;
         background-color: $color-dark;
         position: relative;
         border-radius: 30px;
         margin: 20px 20px;
         box-shadow: 5px 8px 13px $color-secundario;
+        overflow: hidden;
         &-title{
             margin: 0 auto;
             width: 80%;
@@ -37,16 +39,37 @@
             width: 100%;
             text-align: center;
             img{
-                width: 60%;
+                width: 50%;
                 margin: 0 auto;
             }
             p{
                 text-align: center;
+                padding: 10px 20px;
             }
         }
         &-footer{
+            position: absolute;
+            display: block;
+            background-color: $color-secundario;
             text-align: center;
-            padding: 10px;
+            padding: 10px ;
+            bottom: 0px;
+            border-radius: 20px 20px 0px 0px;
+            z-index: 1;
+            width: 25%;
+            left: 40%;
         }
     }
+}
+
+.cards__card:hover {
+    cursor: pointer;
+}
+
+.cards__container:hover .cards__card{
+    opacity: 0.3;
+}
+.cards__container:hover .cards__card:hover{
+    transform :scale(1.2); /* en predetermiando la escala esta en 1 cuando se aumenta, el objeto va a aumentar un poco*/
+    opacity: 1;
 }
