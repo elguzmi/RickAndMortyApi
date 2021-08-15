@@ -12,6 +12,7 @@
         width: 80%;
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
     }
     .cards__card{
         
@@ -33,14 +34,11 @@
         }
         &-body{
             height: 70%;
-            div{
+            width: 100%;
+            text-align: center;
+            img{
+                width: 60%;
                 margin: 0 auto;
-                width: 150px;
-                height: 150px;
-                background-image: url('./../images/title.png');
-                background-size: contain;
-                background-repeat: no-repeat;
-                background-position: center;
             }
             p{
                 text-align: center;

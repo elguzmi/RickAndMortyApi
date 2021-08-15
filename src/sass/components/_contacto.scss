@@ -1,5 +1,5 @@
 .contacto{
-    margin: 100px 0;
+    margin: 100px 0 0px;
     width: 100%;
     height: auto;
     background-color: $color-dark;
@@ -9,17 +9,36 @@
     }
     &__form{
         border-radius: 10px;
-        background-color: $color-secundario;
+        background-color: opacity($color-secundario,0.30);
         width: 60%;
         min-width: 300px;
         margin: 0 auto;
-        padding: 20px;
+        padding: 20px 0px 0px;
         form{
             width: 100%;
             input,textarea{
                 width: 80%;
                 margin: 0 auto;
                 border-radius: 10px;
+                height: 40px;
+                &::placeholder{
+                    color: gray;
+                }
+            }
+            button{
+                margin-top: 20px;
+                width: 100%;
+                height: 40px;
+                background-color: $color-light;
+                color: $color-dark;
+                font-size: 20px;
+                font-family: $fuente1;
+                border: 0px solid black;
+                &:hover{
+                    background-color: rebeccapurple;
+                    cursor: pointer;
+                }
+
             }
         }
     }

@@ -13,16 +13,19 @@
         rel="stylesheet">
 
     <!-- estilos CSS -->
+    <link
+    rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="./src/sass/estilos.css">
-</head>
 
+<!--     <script src="./src/js/require.js"></script> -->
+</head>
 <body>
     <header class="header">
         <!-- barra de navegacion -->
         <nav class="nav">
-            <div class="nav__logo"> <img src="./src/images/title.png" alt="Logo"></div>
             <ul class="nav__elementos">
                 <li>Inicio</li>
+                <li>Biografia</li>
                 <li>Personajes</li>
                 <li>Contacto</li>
             </ul>
@@ -36,7 +39,7 @@
             </div>
         </div>
         <div class="section__container">
-            <div class="section__container-title">
+            <div class="section__container-title animate__animated animate__backInUp ">
 
             </div>
             <div class="section__container-subtitle">
@@ -73,93 +76,7 @@
     <section class="cards">
         <h3>Personajes</h3>
         <div class="cards__container">
-            <div class="cards__card">
-                <div class="cards__card-title">
-                    <h4>Rick sanchez</h4>
-                </div>
-                <div class="cards__card-body">
-                    <div></div>
-                    <p>
-                        dimesion: tierra
-                    </p>
-                </div>
-                <div class="cards__card-footer">
-                    <h4>Rick y morty</h4>
-                </div>
-            </div>
-
-            <div class="cards__card">
-                <div class="cards__card-title">
-                    <h4>Rick sanchez</h4>
-                </div>
-                <div class="cards__card-body">
-                    <div></div>
-                    <p>
-                        dimesion: tierra
-                    </p>
-                </div>
-                <div class="cards__card-footer">
-                    <h4>Rick y morty</h4>
-                </div>
-            </div>
-
-            <div class="cards__card">
-                <div class="cards__card-title">
-                    <h4>Rick sanchez</h4>
-                </div>
-                <div class="cards__card-body">
-                    <div></div>
-                    <p>
-                        dimesion: tierra
-                    </p>
-                </div>
-                <div class="cards__card-footer">
-                    <h4>Rick y morty</h4>
-                </div>
-            </div>
-
-            <div class="cards__card">
-                <div class="cards__card-title">
-                    <h4>Rick sanchez</h4>
-                </div>
-                <div class="cards__card-body">
-                    <div></div>
-                    <p>
-                        dimesion: tierra
-                    </p>
-                </div>
-                <div class="cards__card-footer">
-                    <h4>Rick y morty</h4>
-                </div>
-            </div>
-            <div class="cards__card">
-                <div class="cards__card-title">
-                    <h4>Rick sanchez</h4>
-                </div>
-                <div class="cards__card-body">
-                    <div></div>
-                    <p>
-                        dimesion: tierra
-                    </p>
-                </div>
-                <div class="cards__card-footer">
-                    <h4>Rick y morty</h4>
-                </div>
-            </div>
-            <div class="cards__card">
-                <div class="cards__card-title">
-                    <h4>Rick sanchez</h4>
-                </div>
-                <div class="cards__card-body">
-                    <div></div>
-                    <p>
-                        dimesion: tierra
-                    </p>
-                </div>
-                <div class="cards__card-footer">
-                    <h4>Rick y morty</h4>
-                </div>
-            </div>
+            
         </div>
     </section>
 
@@ -173,6 +90,7 @@
                 <input type="text" placeholder="Correo">
                 <label for="Mensaje">Mensaje:</label>
                 <textarea name="" id="" cols="20" rows="0"></textarea>
+                <button type="submit">Enviar</button>
             </form>
         </div>        
     </section>
@@ -183,6 +101,9 @@
         </div>
     </footer>
 
+   
+    <script src="./src/js/fetchData.js"></script>
+    <script src="./src/js/index.js"></script>
 </body>
 
 </html>
