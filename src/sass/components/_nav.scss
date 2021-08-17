@@ -1,10 +1,16 @@
 .header{
-    height: 60px;
+    height: 20px;
     width: 100%;
-    background-color: opacity($color-secundario,.80);
+    background-color: transparent;
     border-radius: 0px 0px 50px 50px;
-    position: fixed;
+    position: relative;
     z-index: 10000;
+    @include media('tablet'){
+        background-color: opacity($color-secundario,.80);
+        position: fixed;
+        height: 60px;
+
+    }
 }
 .nav{
     width: 90%;
@@ -22,9 +28,14 @@
         background-image:url('./../images/Menu.svg') ;
         background-repeat: no-repeat;
         background-size: cover;
-        width: 30px;
-        height: 30px;
+        
+        width: 40px;
+        height: 40px;
         margin: 10px;
+
+        &:hover{
+            cursor: pointer;
+        }
         /* &:active ~.nav__elementos{
             display: block;
         } */

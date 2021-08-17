@@ -29,7 +29,7 @@ textarea {
 
 * {
   box-sizing: border-box;
-  margin: 0px;
+  margin: 0;
   padding: 0;
   scroll-behavior: smooth;
 }
@@ -38,15 +38,24 @@ body {
   background-color: #3c096c;
   font-family: "Fira Sans", sans-serif;
   color: #ffffff;
+  margin: 0;
+  padding: 0;
 }
 
 .header {
-  height: 60px;
+  height: 20px;
   width: 100%;
-  background-color: rgba(199, 125, 255, 0.8);
+  background-color: transparent;
   border-radius: 0px 0px 50px 50px;
-  position: fixed;
+  position: relative;
   z-index: 10000;
+}
+@media only screen and (min-width: 768px) {
+  .header {
+    background-color: rgba(199, 125, 255, 0.8);
+    position: fixed;
+    height: 60px;
+  }
 }
 
 .nav {
@@ -67,12 +76,15 @@ body {
   background-image: url("./../images/Menu.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   margin: 10px;
   /* &:active ~.nav__elementos{
       display: block;
   } */
+}
+.nav .icon_barra:hover {
+  cursor: pointer;
 }
 @media only screen and (min-width: 768px) {
   .nav .icon_barra {
@@ -121,10 +133,15 @@ body {
   width: 100%;
   min-height: calc(100vh - 300px);
   margin: 0px auto;
-  padding: 30px;
+  padding: 20px 0px;
   display: flex;
   flex-direction: row-reverse;
   justify-content: flex-end;
+}
+@media only screen and (min-width: 768px) {
+  .section {
+    padding: 30px;
+  }
 }
 .section__container--banner {
   height: 100%;
@@ -318,7 +335,7 @@ body {
   border-radius: 10px;
   background-color: rgba(199, 125, 255, 0.3);
   width: 60%;
-  min-width: 300px;
+  min-width: 270px;
   margin: 0 auto;
   padding: 20px 0px 0px;
 }
