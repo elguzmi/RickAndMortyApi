@@ -4,8 +4,11 @@
     background-color: $color-dark;
     padding: 20px;
     &__container{
-        width: 60%;
+        width: 90%;
         margin: 0 auto;
+        @include media('desktop-l'){
+            width:70%    
+        }
         &-titulo{
             @include titulos;
         }

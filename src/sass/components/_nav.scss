@@ -1,7 +1,7 @@
 .header{
     height: 60px;
     width: 100%;
-    background-color: opacity($color-secundario,.30);
+    background-color: opacity($color-secundario,.80);
     border-radius: 0px 0px 50px 50px;
     position: fixed;
     z-index: 10000;
@@ -45,7 +45,6 @@
         border-radius: 10px;
         display: none;
         
-    
         @include media('tablet'){
             display: flex;
             justify-content: space-evenly;

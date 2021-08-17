@@ -1,7 +1,8 @@
 .section{
     width: 100%;
     min-height: calc(100vh - 300px);
-    margin: 0 auto;
+    margin: 0px auto;
+    padding: 30px;
     display: flex;
     flex-direction: row-reverse;
     justify-content: flex-end;
@@ -9,26 +10,33 @@
         height: 100%;
         width: 100%;
         align-self: center;
+        display: none;
+        @include media('desktop-s'){
+            display: block;
+            width: 50%;
+        }
+        
         div{
-            width: 580px;
-            height: 500px;
+            min-width: 400px;
+            min-height: 400px;
+            max-width: 530px;
             background-image: url('../images/banner_option1.png');
             background-repeat: no-repeat;
             background-size: cover;
             margin: 0% auto;
+            
         } 
     }
     &__container{
-        
+        margin: 0 auto;
         width: 90%;
-        margin-left: 50px;
         display: flex;
         flex-direction: column;
-        justify-content: initial;
+        justify-content: center;
 
         &-title{
-            min-width: 500px;
-            height: 250px;
+            min-width: 250px;
+            min-height: 200px;
             background-image: url('../images/title.png');
             background-size: contain;
             background-repeat: no-repeat;

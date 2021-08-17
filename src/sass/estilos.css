@@ -2,23 +2,29 @@
 **********************/
 label {
   display: block;
-  font-size: 25px;
   margin: 30px auto;
   text-align: center;
+  font-size: 25px;
+  font-size: 1.5625rem;
+  line-height: 2.34375rem;
 }
 
 input {
   display: block;
-  font-size: 25px;
   margin: 30px auto;
   text-align: center;
+  font-size: 25px;
+  font-size: 1.5625rem;
+  line-height: 2.34375rem;
 }
 
 textarea {
   display: block;
-  font-size: 25px;
   margin: 30px auto;
   text-align: center;
+  font-size: 25px;
+  font-size: 1.5625rem;
+  line-height: 2.34375rem;
 }
 
 * {
@@ -37,7 +43,7 @@ body {
 .header {
   height: 60px;
   width: 100%;
-  background-color: rgba(199, 125, 255, 0.3);
+  background-color: rgba(199, 125, 255, 0.8);
   border-radius: 0px 0px 50px 50px;
   position: fixed;
   z-index: 10000;
@@ -114,7 +120,8 @@ body {
 .section {
   width: 100%;
   min-height: calc(100vh - 300px);
-  margin: 0 auto;
+  margin: 0px auto;
+  padding: 30px;
   display: flex;
   flex-direction: row-reverse;
   justify-content: flex-end;
@@ -123,25 +130,33 @@ body {
   height: 100%;
   width: 100%;
   align-self: center;
+  display: none;
+}
+@media only screen and (min-width: 992px) {
+  .section__container--banner {
+    display: block;
+    width: 50%;
+  }
 }
 .section__container--banner div {
-  width: 580px;
-  height: 500px;
+  min-width: 400px;
+  min-height: 400px;
+  max-width: 530px;
   background-image: url("../images/banner_option1.png");
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0% auto;
 }
 .section__container {
+  margin: 0 auto;
   width: 90%;
-  margin-left: 50px;
   display: flex;
   flex-direction: column;
-  justify-content: initial;
+  justify-content: center;
 }
 .section__container-title {
-  min-width: 500px;
-  height: 250px;
+  min-width: 250px;
+  min-height: 200px;
   background-image: url("../images/title.png");
   background-size: contain;
   background-repeat: no-repeat;
@@ -153,7 +168,9 @@ body {
 .section__container-subtitle h1 {
   width: 100%;
   text-align: center;
-  font-size: 5.5rem;
+  font-size: 55px;
+  font-size: 3.4375rem;
+  line-height: 5.15625rem;
   text-align: center;
   font-weight: bold;
   text-shadow: 4px 1px 1px #c77dff;
@@ -171,12 +188,19 @@ body {
   padding: 20px;
 }
 .biografia__container {
-  width: 60%;
+  width: 90%;
   margin: 0 auto;
+}
+@media only screen and (min-width: 1480px) {
+  .biografia__container {
+    width: 70%;
+  }
 }
 .biografia__container-titulo {
   text-align: center;
-  font-size: 5.5rem;
+  font-size: 55px;
+  font-size: 3.4375rem;
+  line-height: 5.15625rem;
   text-align: center;
   font-weight: bold;
   text-shadow: 4px 1px 1px #c77dff;
@@ -198,7 +222,9 @@ body {
 }
 .cards h3 {
   text-align: center;
-  font-size: 5.5rem;
+  font-size: 55px;
+  font-size: 3.4375rem;
+  line-height: 5.15625rem;
   text-align: center;
   font-weight: bold;
   text-shadow: 4px 1px 1px #c77dff;
@@ -280,7 +306,9 @@ body {
 }
 .contacto h3 {
   text-align: center;
-  font-size: 5.5rem;
+  font-size: 55px;
+  font-size: 3.4375rem;
+  line-height: 5.15625rem;
   text-align: center;
   font-weight: bold;
   text-shadow: 4px 1px 1px #c77dff;
