@@ -1,3 +1,5 @@
+/* Media Queries Mixin
+**********************/
 label {
   display: block;
   font-size: 25px;
@@ -44,24 +46,59 @@ body {
 .nav {
   width: 90%;
   margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
   height: 100%;
+  position: relative;
 }
-.nav__logo img {
-  height: 60px;
+@media only screen and (min-width: 768px) {
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+.nav .icon_barra {
+  display: block;
+  background-image: url("./../images/Menu.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+  margin: 10px;
+  /* &:active ~.nav__elementos{
+      display: block;
+  } */
+}
+@media only screen and (min-width: 768px) {
+  .nav .icon_barra {
+    display: none;
+  }
 }
 .nav__elementos {
-  width: 60%;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  width: 100%;
+  position: absolute;
+  top: 30px;
+  text-align: center;
+  padding: 10px;
+  background-color: rgba(199, 125, 255, 0.8);
+  border-radius: 10px;
+  display: none;
+}
+@media only screen and (min-width: 768px) {
+  .nav__elementos {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    top: 0px;
+    background-color: transparent;
+  }
 }
 .nav__elementos li {
-  list-style: none;
   font-size: 20px;
+  list-style: none;
   transition: 0.5s all;
+  margin: 10px 0px;
+  width: 100%;
 }
 .nav__elementos li :hover {
   transform: scale(1.5);
